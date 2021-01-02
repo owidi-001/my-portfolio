@@ -12,6 +12,8 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+     <!-- aos animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,10 +26,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav ml-auto dropdown">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About <span class="sr-only">(current)</span></a>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-content">
                           <a class="dropdown-item" href="profile.html">Profile</a>
                           <a class="dropdown-item" href="#">Communities</a>
                           <a class="dropdown-item" href="#">Appriciation Token</a>
@@ -54,31 +56,31 @@
 
     <!-- about section -->
     <section id="showcase">
-        <div class="wrapper">
-            <h4>Next gen Tech inventions</h4>
+        <div class="wrapper" data-aos="zoom-in">
+            <h4>Next gen Tech inovations</h4>
             <h2 class="p-4 text-secondary">Owidi tech Solutions</h2>
             <span class="p-3">Build with us</span> <br>
-            <a href="#" class="btn btn-outline-light">Get resume</a>
+            <a href="./cv/Resume.zip" download='Owidi resume' class="btn btn-outline-light">Get resume</a>
         </div>
     </section>
     <!-- end of about section -->
 
     <!-- portfolio section -->
-    <section class="page-section bg-light" id="portfolio">
+    <section class="page-section bg-light" id="portfolio" data-aos="fade-up">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase text-secondary">Portfolio</h2>
-                <h3 class="section-subheading text-muted">Few of our listed core services customised to the customers needs.</h3>
+                <h2 class="section-heading text-uppercase text-secondary p-5">Portfolio</h2>
+                <h3 class="section-subheading text-muted p-5">Few of the listed core services customised to the customers needs.</h3>
             </div>
 
             <h4 class="pt-4">Networking solutions</h4>
             <div class="row">
 
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#">
                             <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="./imgs/portfolios/N1.jpg" alt="" />
                         </a>
@@ -88,11 +90,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0" data-aos="zoom-out">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#">
                             <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="./imgs/portfolios/N2.jpeg" alt="" />
                         </a>
@@ -102,11 +104,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-left">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#">
                             <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="./imgs/portfolios/N3.jpg" alt="" />
                         </a>
@@ -120,25 +122,25 @@
 
             <h4 class="pt-4">Web solutions</h4>
             <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-right">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#">
                             <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="./imgs/portfolios/w3.jpg" alt="" />
+                            <img class="img-fluid" src="./imgs/portfolios/w2.png" alt="" />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Full stack web</div>
-                            <div class="portfolio-caption-subheading text-muted">Both backend and frontend</div>
+                            <div class="portfolio-caption-subheading text-muted">Blogs and E-commerce sites</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-out">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#">
                             <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="./imgs/portfolios/W1.png" alt="" />
                         </a>
@@ -148,17 +150,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-left">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#">
                             <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="./imgs/portfolios/W1.jpg" alt="" />
+                            <img class="img-fluid" src="./imgs/portfolios/W3.png" alt="" />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Static web</div>
-                            <div class="portfolio-caption-subheading text-muted">Html,CSS,JS(react,angular,vue)</div>
+                            <div class="portfolio-caption-subheading text-muted">Html,CSS,JS(react,angular,vue):Portfolios</div>
                         </div>
                     </div>
                 </div>
@@ -168,11 +170,11 @@
 
                     <h4 class="pt-4">Graphics  Design</h4>
                     <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#">
                             <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="./imgs/portfolios/G1.jpg" alt="" />
                         </a>
@@ -182,11 +184,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0" data-aos="zoom-out">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#">
                             <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="./imgs/portfolios/G2.jpg" alt="" />
                         </a>
@@ -196,13 +198,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-left">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#">
                             <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="./imgs/portfolios/G3.jpg" alt="" />
+                            <img class="img-fluid" src="./imgs/portfolios/G3.png" alt="" />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Logos/Posters</div>
@@ -214,7 +216,9 @@
         </div>
     </section>
     <!-- End of protfolio section -->
-
+<div id="scrollIcon">
+    <a href="#" class="back-to-top btn btn-outline-secondary" style="border-radius: 45%;"><i class="fa fa-chevron-up"></i></a>
+</div>
     <!-- footer area -->
     <footer>
         <span>&copy; owidi techs solutions <script type="text/javascript">
@@ -223,6 +227,14 @@
     </footer>
     <!-- end of footer -->
 </body>
+<!-- animate aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration:1200,
+    });
+  </script>
+<!-- local js -->
 <script src="./js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
