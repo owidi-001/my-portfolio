@@ -38,30 +38,39 @@ section{
   display: block;
 }
 
+/* navbar */
+.navbar a span.navbar-brand img{
+  height: 3em;
+  max-width: 100%;
+}
+/* end narbar */
+
 /* showcase */
-  @keyframes showcase{
+
+  /* @keyframes showcase{
     0%{background: url('../imgs/carousel/one.jpg');}
     50%{background: url('../imgs/carousel/two.jpg');color: #ffffff;background-blend-mode: multiply;}
     75%{background: url('../imgs/carousel/five.jpg');color: #ffffff;background-blend-mode: multiply;}
     100%{background: url('../imgs/carousel/one.jpg');}
-  }
+  } */
 section#showcase{
-    background-image: url('../imgs/carousel/one.jpg');
-    background-color: black;
-    background-blend-mode: screen;
+    /* background-image: url('../imgs/carousel/pad.jpg'); */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../imgs/carousel/pad.jpg');
+    background-size: cover;
+    /* background-color: black; */
+    /* background-blend-mode: screen; */
+    color: var(--textColor);
     background-attachment: fixed;
     height: 100vh;
     display: flex;
     justify-content: center;
     text-align: center;
-    animation-name: showcase;
-    animation-duration: 50s;
-    animation-delay: 3ms;
-    animation-iteration-count: infinite;
+
 }
 
 section#showcase .wrapper{
     margin: 12% auto 10% auto;
+    z-index: 1000;
 }
 section#showcase .wrapper h4{
     text-transform: capitalize;
@@ -70,9 +79,24 @@ section#showcase .wrapper h4{
 section#showcase .wrapper h2{
     text-transform: capitalize;
     font-size: 65px;
-    
 }
-
+section#showcase .wrapper span{
+  padding: 1em;
+}
+#showcase a.resume {
+  display: inline-block;
+  font-size: 1em;
+  background: var(--textColor);
+  padding: 10px 30px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #111;
+  transition: var(--mainTransition);
+}
+#showcase a.resume:hover {
+  letter-spacing: 4px;
+}
 /* end of showcase */
 /* portfolio */
 section#portfolio .portfolio-item {
